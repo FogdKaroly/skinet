@@ -1,0 +1,15 @@
+<header>
+    <span *ngIf="totalCount && totalCount > 0">
+        <strong>
+            {{(pageNumber - 1) * pageSize + 1}} - 
+            {{pageNumber * pageSize
+                > this.totalCount 
+                ? this.totalCount 
+                : pageNumber * pageSize
+            }}
+        </strong> termék a(z) <strong>{{this.totalCount}}</strong> találatból megjelenítve.
+    </span>
+    <span *ngIf="totalCount === 0">
+        Nincs megjeleníthető termék.
+    </span>
+</header>

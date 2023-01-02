@@ -1,18 +1,18 @@
 [
   {
     "Id": 1,
-    "Name": "Boards"
+    "Name": "Deszkák"
   },
   {
     "Id": 2,
-    "Name": "Hats"
+    "Name": "Sisakok"
   },
   {
     "Id": 3,
-    "Name": "Boots"
+    "Name": "Csizmák"
   },
   {
     "Id": 4,
-    "Name": "Gloves"
+    "Name": "Kesztyűk"
   }
 ]
