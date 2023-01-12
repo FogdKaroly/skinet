@@ -1,0 +1,20 @@
+<div class="bg-light px-4 py-3 text-uppercase font-weight-bold">
+    Rendelés összesítő
+</div>
+<div class="p-4">
+    <p class="font-italic mb-4">A szállítási adatok kiválasztása alapján a szállítás díja később kerül hozzáadásra.</p>
+    <ul class="list-unstyled mb-4" *ngIf="(basketTotal$ | async) as totals">
+        <li class="d-flex justify-content-between py-3 border-bottom">
+            <strong class="text-muted">Rendelés részösszege</strong>
+            <strong>{{totals.subtotal | currency : "HUF " : "symbol"}}</strong>
+        </li>
+        <li class="d-flex justify-content-between py-3 border-bottom">
+            <strong class="text-muted">Szállítás</strong>
+            <strong>{{totals.shipping | currency : "HUF " : "symbol"}}</strong>
+        </li>
+        <li class="d-flex justify-content-between py-3 border-bottom">
+            <strong class="text-muted">Végösszeg</strong>
+            <strong>{{totals.total | currency : "HUF " : "symbol"}}</strong>
+        </li>
+    </ul>
+</div>
